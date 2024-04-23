@@ -17,7 +17,7 @@
   {{-- content --}}
   @yield('contect')
   {{-- akhir content --}}
-  
+   
   {{-- navbar --}}
   @include('layouts.footer')
   {{-- akhir navbar --}}
