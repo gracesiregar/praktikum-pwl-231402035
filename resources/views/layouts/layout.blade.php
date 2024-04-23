@@ -17,10 +17,10 @@
   {{-- content --}}
   @yield('contect')
   {{-- akhir content --}}
-   
-  {{-- navbar --}}
+
+  {{-- footer --}}
   @include('layouts.footer')
-  {{-- akhir navbar --}}
+  {{-- akhir footer --}}
 </body>
 
 </html>

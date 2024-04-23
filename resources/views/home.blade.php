@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
     <title>Document</title>
-</head>
-<body>
-  @extends('layouts.layout')
-
-  @section('content')
+    @vite('resources/css/app.css')
+  </head>
+  
+  <body>
+    @include('layouts.navbar')
+    @extends('layouts.layout')
+  @section('contect')
   {{-- content --}}
   <div class="flex justify-center mt-10 flex-col gap-10">
     <form action="/" method="POST">
@@ -61,6 +62,7 @@
           </div>
         </div>
       </div>
+     
       {{-- akhir task 1 --}}
       {{-- Modal --}}
       <dialog id="tombol_{{ $i }}" class="modal">
@@ -82,16 +84,10 @@
       @php
       $i++;
       @endphp
+     
       @endforeach
     </div>
+  
     {{-- akhir task --}}
   
-  @section('footer')
-  {{-- footer --}}
-  <footer class="footer footer-center p-4 bg-base-300 text-base-content">
-    <aside>
-      <p>Copyright © 2024 - All right reserved by Najdain Tafdhila</p>
-    </aside>
-  </footer>
-  {{-- footer --}}
-  @endsection
+  
